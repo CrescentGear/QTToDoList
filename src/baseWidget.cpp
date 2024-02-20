@@ -10,12 +10,12 @@ BaseWidget::BaseWidget(QWidget *parent) : QWidget(parent)
 
 void BaseWidget::basePlateInit()
 {
-    qMainWidget.setParent(this);
+    m_qMainWidget.setParent(this);
     this->setWindowFlags(Qt::FramelessWindowHint);          // 无边框
     this->setAttribute(Qt::WA_TranslucentBackground, true); // 透明底
     this->resize(500, 500);
-    qMainWidget.resize(500, 500);
+    m_qMainWidget.resize(500, 500);
     QString qsStyleSheetPath =
         QDir::currentPath() + "\\styleSheet\\widgetDefaultStyle.qss";
-    qMainWidget.setStyleSheet(readStyleSheet(qsStyleSheetPath));
+    m_qMainWidget.setStyleSheet(readStyleSheet(qsStyleSheetPath));
 }

@@ -9,6 +9,6 @@ public:
 
 private:
     void basePlateInit();
-    QWidget qMainWidget;
+    QWidget m_qMainWidget;
 };
 #endif // !_BASE_WIDGET_H
