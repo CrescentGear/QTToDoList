@@ -1,5 +1,7 @@
 # QTToDoList  
 一个基于Qt开发的ToDoList软件  
+状态：开发中  
+
 # 相关协议  
 Qt  
 github:https://github.com/qt/qt5/tree/5.15.2  
