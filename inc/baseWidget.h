@@ -6,18 +6,19 @@ class BaseWidget : public QWidget
 {
 public:
     BaseWidget(QWidget *parent = nullptr);
+    ~BaseWidget();
 
 private:
     QWidget m_qMainWidget;
     QPushButton m_qCloseButton;
-    
+    QScreen *m_pScreen;
+
     QSize getScreenSize();
     void basePlateInit(const int &width, const int &height);
     void pushButtonInit();
     void initSignal();
 
 protected:
-    void mouseMoveEvent(QMouseEvent* event);
-
+    void mouseMoveEvent(QMouseEvent *event);
 };
 #endif // !_BASE_WIDGET_H

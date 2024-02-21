@@ -9,7 +9,10 @@
 #include <QFontDatabase>
 
 #include "IOFunction.h"
+#include "baseFunction.h"
+
 #pragma execution_character_set("utf-8")
+
 BaseWidget::BaseWidget(QWidget *parent) : QWidget(parent)
 {
     basePlateInit(500, 500);
@@ -17,10 +20,15 @@ BaseWidget::BaseWidget(QWidget *parent) : QWidget(parent)
     initSignal();
 }
 
+BaseWidget::~BaseWidget()
+{
+    QTDL_DELETE(m_pScreen);
+}
+
 QSize BaseWidget::getScreenSize()
 {
-    QScreen *qScreen = QGuiApplication::primaryScreen();
-    QSize qSize = qScreen->size();
+    m_pScreen = QGuiApplication::primaryScreen();
+    QSize qSize = m_pScreen->size();
     return qSize;
 }
 

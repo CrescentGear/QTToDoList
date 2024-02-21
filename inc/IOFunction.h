@@ -1,7 +1,7 @@
-﻿#ifndef _IO_FUNCTION
-#define _IO_FUNCTION
+﻿#ifndef _IO_FUNCTION_H
+#define _IO_FUNCTION_H
 
 class QString;
 QString readStyleSheet(const QString qsPath);
 
-#endif // !_IO_FUNCTION
+#endif // !_IO_FUNCTION_H
