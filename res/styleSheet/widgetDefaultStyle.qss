@@ -1,7 +1,10 @@
-﻿QWidget
-{                  
-      padding-left:20px;                   
-      background-color: rgba(166, 91, 91, 0.55); 
-      border:2px solid rgb(20,196,188);
-      border-radius:15px;
+﻿QWidget {
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 15px;
+}
+
+QPushButton#mainCloseButton {
+    color: rgba(0, 0, 0, 1);
+    text-align: top;
+    font-size:17px;
 }

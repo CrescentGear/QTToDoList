@@ -1,4 +1,4 @@
-#include "IOFunction.h"
+﻿#include "IOFunction.h"
 
 #include <QString>
 #include <QFile>

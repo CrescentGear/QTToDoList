@@ -22,6 +22,7 @@ ${CMAKE_CURRENT_SOURCE_DIR}/res
 
 execute_process( COMMAND ${CMAKE_COMMAND} -E copy_directory ${dependenceFile} ${EXECUTABLE_OUTPUT_PATH}/Debug)
 execute_process( COMMAND ${CMAKE_COMMAND} -E copy_directory ${dependenceFile} ${EXECUTABLE_OUTPUT_PATH}/Release)
+execute_process( COMMAND ${CMAKE_COMMAND} -E copy_directory ${dependenceFile} ${CMAKE_BINARY_DIR})
 
 find_package(Qt5 COMPONENTS Widgets Core Sql Gui REQUIRED )
 # include_directories(${QT_PATH}/include)

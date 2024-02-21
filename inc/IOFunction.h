@@ -1,4 +1,4 @@
-#ifndef _IO_FUNCTION
+﻿#ifndef _IO_FUNCTION
 #define _IO_FUNCTION
 
 class QString;
